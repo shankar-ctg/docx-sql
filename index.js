@@ -2,7 +2,7 @@ const mammoth = require('mammoth');
 const fs = require('fs');
 
 // Word ফাইল থেকে টেক্সট এক্সট্রাক্ট করা
-mammoth.extractRawText({path: "file.docx"})
+mammoth.extractRawText({path: "./file.docx"})
     .then(function(result) {
         const text = result.value; // টেক্সট এক্সট্রাক্ট করা হলো
         // SQL ফর্ম্যাটে কনভার্ট করা
